@@ -1,0 +1,57 @@
+{
+  "auth": {
+    "login": {
+      "title": "Chào bạn! Chúc bạn một ngày tốt lành",
+      "description": "Nhập email và mật khẩu để đăng nhập",
+      "email": "Email",
+      "password": "Mật khẩu",
+      "submit": "Đăng nhập",
+      "loading": "Đang đăng nhập...",
+      "noAccount": "Chưa có tài khoản?",
+      "signUp": "Đăng ký",
+      "invalidCredentials": "Email hoặc mật khẩu không đúng",
+      "emailNotVerified": "Vui lòng xác thực email trước khi đăng nhập",
+      "success": "Đăng nhập thành công",
+      "error": "Đã xảy ra lỗi khi đăng nhập",
+      "invalidEmail": "Vui lòng nhập địa chỉ email hợp lệ",
+      "passwordRequired": "Vui lòng nhập mật khẩu"
+    },
+    "register": {
+      "title": "Tạo tài khoản",
+      "description": "Nhập thông tin của bạn để bắt đầu",
+      "firstName": "Tên",
+      "lastName": "Họ",
+      "email": "Email",
+      "password": "Mật khẩu",
+      "submit": "Tạo tài khoản",
+      "loading": "Đang tạo tài khoản...",
+      "hasAccount": "Đã có tài khoản?",
+      "signIn": "Đăng nhập",
+      "userAlreadyExists": "Email này đã được sử dụng",
+      "success": "Tạo tài khoản thành công",
+      "error": "Đã xảy ra lỗi khi tạo tài khoản",
+      "invalidEmail": "Vui lòng nhập địa chỉ email hợp lệ",
+      "passwordRequired": "Mật khẩu phải có ít nhất 8 ký tự",
+      "firstNameRequired": "Vui lòng nhập tên",
+      "lastNameRequired": "Vui lòng nhập họ"
+    },
+    "verifyEmail": {
+      "title": "Xác thực Email",
+      "verifying": "Đang xác thực email của bạn...",
+      "success": "Xác thực email thành công!",
+      "failed": "Xác thực email thất bại",
+      "noToken": "Không có mã xác thực",
+      "invalidToken": "Mã xác thực không hợp lệ",
+      "expiredToken": "Mã xác thực đã hết hạn",
+      "redirecting": "Đang chuyển hướng đến trang đăng nhập...",
+      "goToLogin": "Đến trang đăng nhập",
+      "createAccount": "Tạo tài khoản mới"
+    },
+    "logout": {
+      "button": "Đăng xuất",
+      "loading": "Đang đăng xuất...",
+      "success": "Đăng xuất thành công",
+      "error": "Đăng xuất thất bại"
+    }
+  }
+}

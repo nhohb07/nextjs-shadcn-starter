@@ -1,19 +1,19 @@
-import type { Metadata, Viewport } from "next"
-import { cookies } from "next/headers"
+import type { Metadata, Viewport } from "next";
+import { cookies } from "next/headers";
 
-import { fontVariables } from "@/lib/fonts"
+import { fontVariables } from "@/lib/fonts";
 
-import "./globals.css"
-import { cn } from "@/lib/utils"
-import { ActiveThemeProvider } from "@/components/active-theme"
-import { ThemeProvider } from "next-themes"
-import { Toaster } from "sonner"
-import { siteConfig } from "@/config/site"
+import "./globals.css";
+import { cn } from "@/lib/utils";
+import { ActiveThemeProvider } from "@/components/active-theme";
+import { ThemeProvider } from "next-themes";
+import { Toaster } from "sonner";
+import { siteConfig } from "@/config/site";
 
 const META_THEME_COLORS = {
   light: "#ffffff",
   dark: "#09090b",
-}
+};
 
 export const metadata: Metadata = {
   title: {
@@ -22,13 +22,7 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL("https://v4.shadcn.com"),
   description: siteConfig.description,
-  keywords: [
-    "Next.js",
-    "React",
-    "Tailwind CSS",
-    "Server Components",
-    "Radix UI",
-  ],
+  keywords: ["Next.js", "React", "Tailwind CSS", "Server Components", "Radix UI"],
   authors: [
     {
       name: "codechozui",
@@ -42,23 +36,23 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   manifest: `${siteConfig.url}/site.webmanifest`,
-}
+};
 
 export const viewport: Viewport = {
   themeColor: META_THEME_COLORS.light,
-}
+};
 
 export default async function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
-  const cookieStore = await cookies()
-  const activeThemeValue = cookieStore.get("active_theme")?.value
-  const isScaled = activeThemeValue?.endsWith("-scaled")
+  const cookieStore = await cookies();
+  const activeThemeValue = cookieStore.get("active_theme")?.value;
+  const isScaled = activeThemeValue?.endsWith("-scaled");
 
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="vi" suppressHydrationWarning>
       <head>
         <script
           dangerouslySetInnerHTML={{
@@ -80,13 +74,7 @@ export default async function RootLayout({
           fontVariables
         )}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-          enableColorScheme
-        >
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange enableColorScheme>
           <ActiveThemeProvider initialTheme={activeThemeValue}>
             {children}
             <Toaster />
@@ -94,5 +82,5 @@ export default async function RootLayout({
         </ThemeProvider>
       </body>
     </html>
-  )
+  );
 }

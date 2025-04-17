@@ -11,7 +11,8 @@ import {
   DropdownMenuGroup,
   DropdownMenuItem,
 } from "@/components/ui/dropdown-menu";
-import { IconCreditCard, IconDotsVertical, IconLogout, IconNotification, IconUserCircle } from "@tabler/icons-react";
+import { IconCreditCard, IconDotsVertical, IconNotification, IconUserCircle } from "@tabler/icons-react";
+import { LogoutButton } from "@/components/auth/logout-button";
 
 export function NavUser({
   user,
@@ -79,8 +80,7 @@ export function NavUser({
             </DropdownMenuGroup>
             <DropdownMenuSeparator />
             <DropdownMenuItem>
-              <IconLogout />
-              Log out
+              <LogoutButton />
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>

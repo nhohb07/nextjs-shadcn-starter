@@ -1,0 +1,57 @@
+{
+  "auth": {
+    "login": {
+      "title": "Welcome back",
+      "description": "Enter your email and password to sign in",
+      "email": "Email",
+      "password": "Password",
+      "submit": "Sign in",
+      "loading": "Signing in...",
+      "noAccount": "Don't have an account?",
+      "signUp": "Sign up",
+      "invalidCredentials": "Invalid email or password",
+      "emailNotVerified": "Please verify your email before logging in",
+      "success": "Logged in successfully",
+      "error": "An error occurred while logging in",
+      "invalidEmail": "Please enter a valid email address",
+      "passwordRequired": "Password is required"
+    },
+    "register": {
+      "title": "Create an account",
+      "description": "Enter your details to get started",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "email": "Email",
+      "password": "Password",
+      "submit": "Create account",
+      "loading": "Creating account...",
+      "hasAccount": "Already have an account?",
+      "signIn": "Sign in",
+      "userAlreadyExists": "An account with this email already exists",
+      "success": "Account created successfully",
+      "error": "An error occurred while creating your account",
+      "invalidEmail": "Please enter a valid email address",
+      "passwordRequired": "Password must be at least 8 characters",
+      "firstNameRequired": "First name is required",
+      "lastNameRequired": "Last name is required"
+    },
+    "verifyEmail": {
+      "title": "Email Verification",
+      "verifying": "Verifying your email...",
+      "success": "Email verified successfully!",
+      "failed": "Email verification failed",
+      "noToken": "No verification token provided",
+      "invalidToken": "Invalid verification token",
+      "expiredToken": "Verification token has expired",
+      "redirecting": "Redirecting you to the login page...",
+      "goToLogin": "Go to Login",
+      "createAccount": "Create New Account"
+    },
+    "logout": {
+      "button": "Logout",
+      "loading": "Logging out...",
+      "success": "Logged out successfully",
+      "error": "Failed to logout"
+    }
+  }
+}
